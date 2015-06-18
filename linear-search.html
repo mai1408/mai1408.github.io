@@ -3,7 +3,7 @@
    
 
 <head>
-        <title>Software Optimization</title>
+        <title>Linear Search</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -14,16 +14,16 @@
         <div class="container">
             
             <div id="gramers_social_networks">
-                <a class="socialLink" href="index.html"><img alt="Home page" src="images/Home.png" /></a>                
+                <a class="socialLink" href="index.html"><img alt="Home page" src="images/menu/Home.png" /></a>                
                                 
                 <div id='wrap'>
                     <div id="clickable_div">
-                        <a class="socialLink" href="searching.html"><img alt="Searching algorithms" src="images/Searching-Algorithms.png" /></a>    
+                        <a class="socialLink" href="searching.html"><img alt="Searching algorithms" src="images/menu/Searching-Algorithms.png" /></a>    
                         <div id="nav_menu">
                             <ul>                
-                                <a class="socialLink" href="linear-search.html"><img alt="Linear Search" src="images/Linear-Search.png" /></a>
-                                <a class="socialLink" href="binary-search.html"><img alt="Binary Search" src="images/Binary-Search.png" /></a>
-                                <a class="socialLink" href="ternary-search.html"><img alt="Ternary Search.png" src="images/Ternary-Search.png" /></a>
+                                <a class="socialLink" href="linear-search.html"><img alt="Linear Search" src="images/menu/Linear-Search.png" /></a>
+                                <a class="socialLink" href="binary-search.html"><img alt="Binary Search" src="images/menu/Binary-Search.png" /></a>
+                                <a class="socialLink" href="ternary-search.html"><img alt="Ternary Search.png" src="images/menu/Ternary-Search.png" /></a>
                             </ul>
                         </div>
                     </div>
@@ -31,14 +31,14 @@
 
                 <div id='wrap2'>
                     <div id="clickable_div2">
-                        <a class="socialLink" href="sorting.html"><img alt="Sorting algorithms" src="images/Sorting-Algorithms.png" /></a>    
+                        <a class="socialLink" href="sorting.html"><img alt="Sorting algorithms" src="images/menu/Sorting-Algorithms.png" /></a>    
                         <div id="nav_menu2">
                             <ul>                
-                                <a class="socialLink" href="bubble-sort.html"><img alt="Bubble Sort" src="images/Bubble-Sort.png" /></a>
-                                <a class="socialLink" href="insertion-sort.html"><img alt="Insertion Sort" src="images/Insertion-Sort.png" /></a>
-                                <a class="socialLink" href="selection-sort.html"><img alt="Selection Sort" src="images/Selection-Sort.png" /></a>
-                                <a class="socialLink" href="counting-sort.html"><img alt="Counting Sort" src="images/Counting-Sort.png" /></a>
-                                <a class="socialLink" href="radix-sort.html"><img alt="Radix Sort" src="images/Radix-Sort.png" /></a>                                
+                                <a class="socialLink" href="bubble-sort.html"><img alt="Bubble Sort" src="images/menu/Bubble-Sort.png" /></a>
+                                <a class="socialLink" href="insertion-sort.html"><img alt="Insertion Sort" src="images/menu/Insertion-Sort.png" /></a>
+                                <a class="socialLink" href="selection-sort.html"><img alt="Selection Sort" src="images/menu/Selection-Sort.png" /></a>
+                                <a class="socialLink" href="counting-sort.html"><img alt="Counting Sort" src="images/menu/Counting-Sort.png" /></a>
+                                <a class="socialLink" href="radix-sort.html"><img alt="Radix Sort" src="images/menu/Radix-Sort.png" /></a>                                
                             </ul>
                         </div>
                     </div>
@@ -46,17 +46,17 @@
 
                 <div id='wrap3'>
                     <div id="clickable_div3">
-                        <a class="socialLink" href="recursive.html"><img alt="Recursive algorithms" src="images/Recursive-Algorithms.png" /></a>    
+                        <a class="socialLink" href="recursive.html"><img alt="Recursive algorithms" src="images/menu/Recursive-Algorithms.png" /></a>    
                         <div id="nav_menu3">
                             <ul>                
-                                <a class="socialLink" href="factorial.html"><img alt="Factorial" src="images/Factorial.png" /></a>
-                                <a class="socialLink" href="tower-of-hanoi.html"><img alt="Tower of Hanoi" src="images/Tower-of-Hanoi.png" /></a>                                
+                                <a class="socialLink" href="factorial.html"><img alt="Factorial" src="images/menu/Factorial.png" /></a>
+                                <a class="socialLink" href="tower-of-hanoi.html"><img alt="Tower of Hanoi" src="images/menu/Tower-of-Hanoi.png" /></a>                                
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <a class="socialLink" href="about.html"><img alt="About" src="images/About.png" /></a>
+                <a class="socialLink" href="about.html"><img alt="About" src="images/menu/About.png" /></a>
             </div>
                 
             <div id="text_container">
@@ -65,7 +65,7 @@
                 <br>
                 <h2>Linear Search</h2>
                 <p style="text-indent: 2em;">Η γραμμική ή ακολουθιακή αναζήτηση είναι μία μέθοδος εύρεσης μιας συγκεκριμένης τιμής σε μία λίστα η οποία ελέγχει κάθε στοιχείο ακολουθιακά μέχρι να βρεθεί το επιθυμητό στοιχείο ή να εξαντληθεί η λίστα. Δεν είναι απαραίτητη η ταξινόμηση της λίστας.</p>
-                <p style="text-indent: 2em;">Η γραμμική αναζήτηση είναι ο απλούστερος αλγόριθμος αναζήτησης και ανήκει στην κατηγορία της τυφλής (brute-force) ή εξαντλητικής αναζήτησης. Η πολυπλοκότητα χειρότερης περίπτωσης είναι ανάλογη με τον αριθμό των στοιχείων της λίστας δηλαδή <img src="images/linear-search-1.1.png" style="vertical-align: middle;"> . Το μειονέκτημα σε σχέση με τη δυαδική αναζήτηση είναι ότι σε περίπτωση ταξινομημένης λίστας δεν το εκμεταλεύεται, όπου και είναι καταδικασμένη να εξετάσει ολόκληρη τη λίστα.
+                <p style="text-indent: 2em;">Η γραμμική αναζήτηση είναι ο απλούστερος αλγόριθμος αναζήτησης και ανήκει στην κατηγορία της τυφλής (brute-force) ή εξαντλητικής αναζήτησης. Η πολυπλοκότητα χειρότερης περίπτωσης είναι ανάλογη με τον αριθμό των στοιχείων της λίστας δηλαδή <img src="images/formulas/sorting-n.png" style="vertical-align: middle;"> . Το μειονέκτημα σε σχέση με τη δυαδική αναζήτηση είναι ότι σε περίπτωση ταξινομημένης λίστας δεν το εκμεταλεύεται, όπου και είναι καταδικασμένη να εξετάσει ολόκληρη τη λίστα.
                 </p> 
                 <h2>Pseudocode</h2>
                 <div id="pseudocode">
@@ -106,15 +106,9 @@
                 Το επιθυμητό αποτέλεσμα έρχεται στην 9η επανάληψη όπου ο δείκτης i παίρνει την τιμή 8.<br> 
                 </div>
                 
-            </div>      
-
-            <div id="gramers_logo"><img src="images/gramersLogo.png" alt="GRamers Logo" /></div>
-            
+            </div>
+                        
         </div>
-
-
-
-
         
         <script src="../code.jquery.com/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
