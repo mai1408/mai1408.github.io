@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="el" xml:lang="el"> 
+   
+
+<head>
+        <title>Software Optimization</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link type="text/css" href="css/style.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&amp;subset=latin,greek,greek-ext' rel='stylesheet' type='text/css' />    </head>
+    <body>
+        
+        <div class="container">
+            
+            <div id="gramers_social_networks">
+                <a class="socialLink" href="index.html"><img alt="Home page" src="images/Home.png" /></a>                
+                                
+                <div id='wrap'>
+                    <div id="clickable_div">
+                        <a class="socialLink" href="searching.html"><img alt="Searching algorithms" src="images/Searching-Algorithms.png" /></a>    
+                        <div id="nav_menu">
+                            <ul>                
+                                <a class="socialLink" href="linear-search.html"><img alt="Linear Search" src="images/Linear-Search.png" /></a>
+                                <a class="socialLink" href="binary-search.html"><img alt="Binary Search" src="images/Binary-Search.png" /></a>
+                                <a class="socialLink" href="ternary-search.html"><img alt="Ternary Search.png" src="images/Ternary-Search.png" /></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='wrap2'>
+                    <div id="clickable_div2">
+                        <a class="socialLink" href="sorting.html"><img alt="Sorting algorithms" src="images/Sorting-Algorithms.png" /></a>    
+                        <div id="nav_menu2">
+                            <ul>                
+                                <a class="socialLink" href="bubble-sort.html"><img alt="Bubble Sort" src="images/Bubble-Sort.png" /></a>
+                                <a class="socialLink" href="insertion-sort.html"><img alt="Insertion Sort" src="images/Insertion-Sort.png" /></a>
+                                <a class="socialLink" href="selection-sort.html"><img alt="Selection Sort" src="images/Selection-Sort.png" /></a>
+                                <a class="socialLink" href="counting-sort.html"><img alt="Counting Sort" src="images/Counting-Sort.png" /></a>
+                                <a class="socialLink" href="radix-sort.html"><img alt="Radix Sort" src="images/Radix-Sort.png" /></a>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='wrap3'>
+                    <div id="clickable_div3">
+                        <a class="socialLink" href="recursive.html"><img alt="Recursive algorithms" src="images/Recursive-Algorithms.png" /></a>    
+                        <div id="nav_menu3">
+                            <ul>                
+                                <a class="socialLink" href="factorial.html"><img alt="Factorial" src="images/Factorial.png" /></a>
+                                <a class="socialLink" href="tower-of-hanoi.html"><img alt="Tower of Hanoi" src="images/Tower-of-Hanoi.png" /></a>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="socialLink" href="about.html"><img alt="About" src="images/About.png" /></a>
+            </div>
+                
+            <div id="text_container">
+                <br>
+                <h1>Searching Algorithms</h1>
+                <br>
+                <h2>Binary Search</h2>
+                      
+                <p style="text-indent: 2em;">Ο αλγόριθμος δυαδικής αναζήτησης έχει στόχο την εύρεση της θέσης ενός ζητούμενου στοιχείου (κλειδί) μέσα από ένα ταξινομημένο μονοδιάστατο σύνολο στοιχείων. Το σύνολο μπορεί να είναι ταξινομημένο είτε σε αύξουσα είτε σε φθίνουσα σειρά. Παρακάτω γίνεται αναφορά σε μία αύξουσα ακολουθία στοιχείων. Σε κάθε βήμα ο αλγόριθμος συγκρίνει την τιμή του κλειδιού με την τιμή του μεσαίου στοιχείου του συνόλου. Αν οι τιμές συμπίπτουν τότε βρέθηκε το ζητούμενο στοιχείου και επομένως και η θέση του. Διαφορετικά αν η τιμή του κλειδιού είναι μικρότερη από την τιμή του μεσαίου στοιχείου τότε επαναλαμβάνεται η διαδικασία στο υποσύνολο που βρίσκεται αριστερά της μεσαίας τιμής ή αν είναι μεγαλύτερη στο υποσύνολο που βρίσκεται δεξιά. Αν το σύνολο που προκύπτει είναι κενό τότε η ζητούμενη τιμή δεν βρίσκεται στο αρχικό σύνολο.</p>
+                <p style="text-indent: 2em;">Η δυαδική αναζήτηση είναι ένας αλγόριθμος αναζήτησης διαίρει και βασίλευε ή πιο συγκεκριμένα αλγόριθμος διχοτόμησης διότι μετά από κάθε σύγκριση θα επιλέξει ένα από τα δύο διακριτά υποσύνολα. Όσον αφορά τη χρονική πολυπλοκότητα, είναι λογαριθμική ως προς το μέγεθος της εισόδου. Σε κάθε επανάληψη υποδιπλασιάζει τον αριθμό των στοιχείων που πρόκειται να εξεταστούν έτσι για τον εντοπισμό ενός συγκεκριμένου στοιχείου ή για την προσδιορισμό της απουσίας του χρειάζεται λογαριθμικό χρόνο. Στην καλύτερη περίπτωση θα εκτελέσει τουλάχιστον μία σύγκριση ενώ στη χειρότερη όσο είναι ο λογάριθμος του Ν, δηλαδή <img src="images/binary-search-1.1.png" style="vertical-align: middle;"> .
+                </p>
+                <h2>Pseudocode</h2>
+                <div id="pseudocode">
+                    1.BinarySearch(A[0..N-1], value)
+                    <br>
+                    2.<div id="level1">low ← 0</div>
+                    <br>
+                    3.<div id="level1">high ← N – 1</div>
+                    <br>
+                    4.<div id="level1">  while (low ≤ high)</div>
+                    <br>
+                    <span style="vertical-align: middle;">5.<div id="level2">      mid ←   </span><img src="images/binary-search-2.1.png" style="vertical-align: middle;"></div>
+                    <br>
+                    6.<div id="level2">      if (A[mid] > value)</div>
+                    <br>
+                    7.<div id="level3">          high ← (mid – 1)</div>
+                    <br>
+                    8.<div id="level2">      else if (A[mid] < value)</div>
+                    <br>
+                    9.<div id="level3">          low ← (mid + 1)</div>
+                    <br>
+                    10.<div id="level2">     else</div>
+                    <br>
+                    11.<div id="level3">         return mid</div>
+                    <br>
+                    12.<div id="level2">     end if</div>
+                    <br>
+                    13.<div id="level1"> end while</div>
+                    <br>
+                    14.<div id="level1"> return -1</div>
+                    <br>
+                    15.end
+                </div>                   
+                
+                <h2>Applet</h2>
+                <br>
+                <h2>Example</h2>
+                <div id="example">
+                   <p>Εφαρμόζοντας το παράδειγμα της γραμμικής αναζήτησης στη συγκεκριμένη περίπτωση παρατηρούμε ότι η δυαδική αναζήτηση είναι πιο αποδοτική. Έστω ο πίνακας A=[1 2 3 4 5 6 7 8 9 10] και value=9 είναι ο ακέραιος που αναζητάμε. Υπολογίζουμε αρχικά τις μεταβλητές low και high με τιμές 0 και 9 αντίστοιχα. Η συνθήκη του βρόχου while πληρείται (0 ≤ 9) και έτσι εκτελείται το επόμενο κομμάτι του κώδικα.</p>
+                   <span style="vertical-align: middle;">mid= </span><img src="images/binary-search-3.1.png" style="vertical-align: middle;"><br>
+                   <p>Το στοιχείο του Α με δείκτη 4 είναι ο ακέραιος 5 (A[4] = 5), που είναι μικρότερος από το 9, έτσι σύμφωνα με τη γραμμή 8 του ψευδοκώδικα υπολογίζεται ξανά το low λαμβάνοντας την τιμή 5. Η συνθήκη δίνει αληθές αποτέλεσμα (5 ≤ 9) και συνεχίζεται η επανάληψη.</p>
+                   <span style="vertical-align: middle;">mid= </span><img src="images/binary-search-3.2.png" style="vertical-align: middle;"><br>
+                   <p>Το στοιχείο με δείκτη 7 είναι το 8 (Α[7] = 8), το οποίο είναι μικρότερο του 9 και πάλι εκτελείται η γραμμή 8 του ψευδοκώδικα. Το low λαμβάνει τη νέα τιμή (low = 8) και εν συνεχεία εξετάζεται η συνθήκη του βρόχου (8 ≤ 9) δίνοντας αληθές αποτέλεσμα για ακόμη μία φορά.</p>
+                   <span style="vertical-align: middle;">mid= </span><img src="images/binary-search-3.3.png" style="vertical-align: middle;"><br>                   
+                   Το mid λαμβάνει την τιμή 8 το οποίο μας δίνει το ζητούμενο στοιχείο στον πίνακα Α (Α[8] = 9).
+                   <br>
+
+                </div>
+                
+            </div>      
+
+            <div id="gramers_logo"><img src="images/gramersLogo.png" alt="GRamers Logo" /></div>
+            
+        </div>
+
+
+
+
+        
+        <script src="../code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-63204485-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+
+
+</html>

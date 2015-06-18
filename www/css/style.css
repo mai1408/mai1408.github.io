@@ -1,0 +1,119 @@
+/*
+Created by GRamers for gramers.gr
+*/
+/* 
+    Created on : May 19, 2015, 10:31:16 PM
+    Author     : Dimitrios Papadopoulos
+*/
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Open Sans Condensed';
+}
+body{
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align:center;
+    background-color: rgb(0, 127, 255);
+}
+p{
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+    text-align:justify;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+#clickable_div { width: 256px}
+#nav_menu{ display:none;}
+#wrap{  }
+#clickable_div2 { width: 256px}
+#nav_menu2{ display:none;}
+#wrap2{  }
+#clickable_div3 { width: 256px}
+#nav_menu3{ display:none;}
+#wrap3{  }
+tr.spaceUnder > th
+{
+  padding-bottom: 2em;
+}
+#example{
+    margin-bottom:30px;
+    margin-left:10px;
+    margin-right:10px;
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+#pseudocode{
+    margin-left:330px;
+    margin-right:10px;
+    margin-bottom:10px;
+    text-align:left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+#level1{
+    margin-left: 20px;
+    font-family: "Times New Roman", Times, serif;    
+    display: inline
+
+}
+#level2{
+    margin-left: 40px;
+    font-family: "Times New Roman", Times, serif;
+    display: inline
+}
+#level3{
+    margin-left: 60px;
+    font-family: "Times New Roman", Times, serif;
+    display: inline
+}
+#level4{
+    margin-left: 80px;
+    font-family: "Times New Roman", Times, serif;
+    display: inline
+}
+#other{
+    margin-bottom: 30px;
+}
+#gramers_logo{
+    width:542px;
+    height:650px;
+    display:block;
+    position:relative;
+    left:550px;
+    margin-left:-271px;
+    opacity:0;
+    z-index:2;
+}
+#gramers_social_networks{
+    position:relative;    
+    width:25%;
+    margin-top: 10px;
+    float: left;
+    text-align: left;
+}
+.socialLink{
+    opacity:0;
+    position:relative;
+    top:300px;
+}
+.container{
+    position:relative;
+    width:1100px;
+    margin:auto;
+}
+#text_container{
+    position: relative;    
+    width:75%;
+    margin-top: 10px;
+    float:right;
+    opacity:1;
+    background:rgba(255,255,255,0.7);    
+}

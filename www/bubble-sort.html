@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="el" xml:lang="el"> 
+   
+
+<head>
+        <title>Software Optimization</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link type="text/css" href="css/style.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&amp;subset=latin,greek,greek-ext' rel='stylesheet' type='text/css' />    </head>
+    <body>
+        
+        <div class="container">
+            
+            <div id="gramers_social_networks">
+                <a class="socialLink" href="index.html"><img alt="Home page" src="images/Home.png" /></a>                
+                                
+                <div id='wrap'>
+                    <div id="clickable_div">
+                        <a class="socialLink" href="searching.html"><img alt="Searching algorithms" src="images/Searching-Algorithms.png" /></a>    
+                        <div id="nav_menu">
+                            <ul>                
+                                <a class="socialLink" href="linear-search.html"><img alt="Linear Search" src="images/Linear-Search.png" /></a>
+                                <a class="socialLink" href="binary-search.html"><img alt="Binary Search" src="images/Binary-Search.png" /></a>
+                                <a class="socialLink" href="ternary-search.html"><img alt="Ternary Search.png" src="images/Ternary-Search.png" /></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='wrap2'>
+                    <div id="clickable_div2">
+                        <a class="socialLink" href="sorting.html"><img alt="Sorting algorithms" src="images/Sorting-Algorithms.png" /></a>    
+                        <div id="nav_menu2">
+                            <ul>                
+                                <a class="socialLink" href="bubble-sort.html"><img alt="Bubble Sort" src="images/Bubble-Sort.png" /></a>
+                                <a class="socialLink" href="insertion-sort.html"><img alt="Insertion Sort" src="images/Insertion-Sort.png" /></a>
+                                <a class="socialLink" href="selection-sort.html"><img alt="Selection Sort" src="images/Selection-Sort.png" /></a>
+                                <a class="socialLink" href="counting-sort.html"><img alt="Counting Sort" src="images/Counting-Sort.png" /></a>
+                                <a class="socialLink" href="radix-sort.html"><img alt="Radix Sort" src="images/Radix-Sort.png" /></a>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='wrap3'>
+                    <div id="clickable_div3">
+                        <a class="socialLink" href="recursive.html"><img alt="Recursive algorithms" src="images/Recursive-Algorithms.png" /></a>    
+                        <div id="nav_menu3">
+                            <ul>                
+                                <a class="socialLink" href="factorial.html"><img alt="Factorial" src="images/Factorial.png" /></a>
+                                <a class="socialLink" href="tower-of-hanoi.html"><img alt="Tower of Hanoi" src="images/Tower-of-Hanoi.png" /></a>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="socialLink" href="about.html"><img alt="About" src="images/About.png" /></a>
+            </div>
+                
+            <div id="text_container">
+                <br>
+                <h1>Sorting Algorithms</h1>
+                <br>
+                <h2>Bubble Sort Optimized</h2>
+                <p style="text-indent: 2em;">Η ταξινόμηση φυσαλίδας είναι ένας απλός αλγόριθμος ταξινόμησης, ο οποίος διατρέχει επανειλημμένα τη λίστα που πρόκειται να ταξινομηθεί συγκρίνοντας κάθε ζευγάρι γειτονικών στοιχείων και ανταλλάσοντάς τα σε περίπτωση που βρίσκονται σε λανθασμένη σειρά. Το πέρασμα διαμέσου της λίστας επαναλαμβάνεται μέχρις ότου να μη χρειάζεται ανταλλαγή στοιχείων, το οποίο υποδηλώνει ότι η λίστα έχει ταξινομηθεί. Ο αλγόριθμος πήρε το όνομα του από τον τρόπο που τα στοιχεία με πολύ μικρές τιμές αναδύονται στην κορυφή της λίστας όπως οι φυσαλίδες στην επιφάνει του νερού.    Αν και είναι απλός αλγόριθμος, είναι πολύ αργός και καθόλου πρακτικός στις περισσότερες περιπτώσεις ακόμη κι αν συγκριθεί με την ταξονίμηση με εισαγωγή. Μπορεί να γίνει πρακτικός αν η λίστα είναι ταξινομημένη αλλά περιστασιακά κάποια στοιχεία βρίσκονται εκτός θέσης κοντά όμως στη σωστή τους θέση.</p> 
+                <p style="text-indent: 2em;">Όσον αφορά την απόδοση του αλγορίθμου η πολυπλοκότητα χειρότερης περίπτωσης είναι <img src="images/bubble-sort-1.1.png" style="vertical-align: middle;"> , όπου Ν είναι ο αριθμός των στοιχείων προς ταξινόμηση. Υπάρχουν άλλοι αλγόριθμοι ταξινόμησης πιο αποδοτικοί αλλά ακόμα και η ταξινόμηση με εισαγωγή, που έχει την ίδια πολυπλοκότητα χειρότερης περίπτωσης, τις περισσότερες φορές έχει καλύτερα αποτελέσματα. Επομένως η ταξινόμηση φυσαλίδας δεν αποτελεί πρακτική λύση όταν το Ν είναι μεγάλος αριθμός.</p> 
+                <p style="text-indent: 2em;">Ο αλγόριθμος της φυσαλίδας μπορεί εύκολα να βελτιστοποιηθεί παρατητώντας ότι το Ν-οστό πέρασμα βρίσκει το Ν-οστό μεγαλύτερο στοιχείο και το τοποθετεί στην τελική του θέση. Έτσι ο εσωτερικός βρόχος μπορεί να αποφύγει τον έλεγχο των Ν-1 τελευταίων στοιχείων όταν τρέχει για Ν-οστή φορά. Γενικότερα, αυτό μπορεί να εφαρμοστεί αν περισσότερα στοιχεία έχουν τοποθετηθεί στην τελική τους θέση. Ειδικότερα όλα τα στοιχεία μετά την τελευταία ανταλλαγή είναι ταξινομημένα και δε χρειάζεται να ελεγχθούν ξανά. Αυτό επιτρέπει στον βελτιστοποιημένο αλγόριθμο να προσπεράσει αρκετά στοιχεία με αποτέλεσμα να μειωθούν κατά 50% οι συγκρίσεις στη χειρότερη περίπτωση. 
+                </p>
+                     
+                <h2>Pseudocode</h2>
+                <div id="pseudocode">
+                    1.BubbleSortOptimized(A[0..N-1])
+                    <br>
+                    2.<div id="level1">  n ← N</div>
+                    <br>
+                    3.<div id="level1">  do</div>
+                    <br>
+                    4.<div id="level2">      changes ← 0</div>
+                    <br>
+                    5.<div id="level2">      for i=1:n-1</div>
+                    <br>
+                    6.<div id="level3">          if (A[i-1] > A[i])</div>
+                    <br>
+                    7.<div id="level4">              swap(A[i], A[i-1])</div>
+                    <br>
+                    8.<div id="level4">              changes ← i</div>
+                    <br>
+                    9.<div id="level3">          end if</div>
+                    <br>
+                    10.<div id="level3">         i ← i + 1</div>
+                    <br>
+                    11.<div id="level2">     end for</div>
+                    <br>
+                    12.<div id="level2">     n ← changes</div>
+                    <br>
+                    13.<div id="level1"> while (n ≠ 0)</div>
+                    <br>
+                    14.<div id="level1"> return A  </div>  
+                    <br>
+                    15.end                    
+                </div>
+                    
+                
+                <h2>Applet</h2>
+                <br>
+                <h2>Example</h2>
+                <div id="example">
+                    Έστω ο πίνακας ακεραίων A=[15 1 7 3 2 25 20 18 30 250] με στόχο να ταξινομήσουμε τα στοιχεία σε αύξουσα σειρά. Το n=10 και το changes=0. <br>
+                    Επανάληψη 1<br>
+                    Ο δείκτης i θα πάρει την τιμή 1 και θα ελέγξουμε αν ισχύει η συνθήκη για τα πρώτα δύο στοιχείο του Α.<br>
+                    i=1, A[0]=15, A[1]=1, 15>1 <br>
+                    Η συνθήκη ισχύει, τα στοιχεία αλλάζουν θέσεις μεταξύ τους και η μεταβλητή changes παίρνει την τιμή 1.<br>
+                    15↔1, changes=1<br>
+                    Ο πίνακας Α έχει την ακόλουθη μορφή μετά την πρώτη επανάληψη.<br>
+                    A=[1 15 7 3 2 25 20 18 30 250]<br>
+                    Επανάληψη 2<br>
+                    Ο δείκτης i γίνεται 2 και η συνθήκη ισχύει ξανά οπότε γίνεται ανταλλαγή των δύο στοιχείων με τη μεταβλητή changes να κρατάει τη θέση της τελευταίας ανταλλαγής.<br>
+                    i=2, A[1]=15, A[2]=7, 15>7 15↔7, changes=2<br>
+                    Ο πίνακας Α πλέον έχει πάρει την ακόλουθη μορφή.<br>
+                    A=[1 7 15 3 2 25 20 18 30 250]<br>
+                    …<br>
+                    Επανάληψη 9<br>
+                    Ο δείκτης i γίνεται 9, η συνθήκη όμως δεν ισχύει και τα στοιχεία παραμένουν στη θέση τους. Η μεταβλητή changes έχει κρατήσει τη θέση της τελευταίας ανταλλαγής στοιχείων.<br>
+                    i=9, A[8]=30, A[9]=250, 30<250, changes=7 <br>
+                    Ο πίνακας Α είναι ο ακόλουθος.<br>
+                    A=[1 7 3 2 15 20 18 25 30 250]<br>
+                    Το n λαμβάνει την τιμή του changes με σκοπό να μειώσει το πλήθος των επαναλήψεων (n = 7). Επειδή ισχύει n ≠ 0 επαναλαμβάνονται οι εντολές του βρόχου.<br>
+                    …<br>
+                    Στην τελευταία είσοδο του βρόχου while το n θα λάβει την τιμή 2. Η μεταβλητή changes μηδενίζεται και ξεκινάει η επανάληψη για i = 1.<br>
+                    i=1, A[0]=1, A[1]=2, 1<2 changes=0 <br>
+                    i=2, A[1]=2, A[2]=3, 2<3 changes=0 <br>
+                    Δεν ικανοποιείται η συνθήκη σε καμία περίπτωση και τα στοιχεία παραμένουν στις θέσεις τους. Το n λαμβάνει την τιμή 0 από το το changes και έτσι ικανοποιείται η συνθήκη τερματισμού του βρόχου while. Ο πίνακας Α έχει πλέον ταξινομηθεί.<br>
+                    A=[1 2 3 7 15 18 20 25 30 250]                    
+                </div>
+
+                <div id="other">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+            </div>            
+            
+        </div>
+
+
+
+
+        
+        <script src="../code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-63204485-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+
+
+</html>
