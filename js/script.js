@@ -11,7 +11,15 @@ var global = {
     speed : 10000,
     onload : function(){        
         var time = 400;
-        $('.socialLink').each(function(){
+        $('.menuitem').each(function(){
+            $(this).stop().animate({'opacity':'1','top':'0px'},time,'easeOutCubic',function(){
+                if($(this).is(':last-child')){
+                    global.triggers();
+                }
+            });
+            time+=400;
+        });
+        $('.submenu').each(function(){
             $(this).stop().animate({'opacity':'1','top':'0px'},time,'easeOutCubic',function(){
                 if($(this).is(':last-child')){
                     global.triggers();
@@ -30,12 +38,20 @@ var global = {
     },
     triggers : function(){
 
-        $(document).on('mouseover','.socialLink',function(){
+        $(document).on('mouseover','.menuitem',function(){
             $(this).stop().animate({'opacity':'0.5','left':'-10px'},400);
         });
         
-        $(document).on('mouseout','.socialLink',function(){
+        $(document).on('mouseout','.menuitem',function(){
             $(this).stop().animate({'opacity':'1','left':'0px'},1000);
+        });
+
+        $(document).on('mouseover','.submenu',function(){
+            $(this).stop().animate({'opacity':'0.5','left':'15px'},400);
+        });
+        
+        $(document).on('mouseout','.submenu',function(){
+            $(this).stop().animate({'opacity':'1','left':'25px'},1000);
         });
 
         $('#clickable_div').mouseover( function(){
