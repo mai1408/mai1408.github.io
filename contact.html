@@ -3,7 +3,7 @@
    
 
 <head>
-        <title>About</title>
+        <title>Contact</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -60,10 +60,78 @@
                 <a class="menuitem" href="contact.html"><img alt="About" src="images/menu/Contact.png" /></a>
             </div>
                 
-            <div id="text_container">                
-                <h1>About</h1>
-            </div>
-            
+            <div id="text_container">
+                <h1>Contact</h1>
+                <br>
+                <div id="form">                    
+                    <form name="htmlform" method="post" action="html_form_send.php">
+                    <table style="margin:auto">
+                    
+                    <tr>
+                        <td valign="top">
+                            <label for="first_name">First Name *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="first_name" maxlength="50" size="30">
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td valign="top">
+                            <label for="last_name">Last Name *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="last_name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="email">Email Address *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="email" maxlength="80" size="30">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="telephone">Telephone Number&nbsp;&nbsp;</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="telephone" maxlength="30" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="comments">Comments *</label>
+                        </td>
+                        <td valign="top">
+                            <textarea  name="comments" maxlength="1000" cols="18" rows="6"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                    </table>
+                    </form>
+
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <label for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    </div>
+    <input id="submit_button" type="submit" value="Send email" />
+</form>     
+                </div>                
+            </div>            
         </div>
 
 
