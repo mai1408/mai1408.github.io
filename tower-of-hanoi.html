@@ -3,7 +3,7 @@
    
 
 <head>
-        <title>Linear Search</title>
+        <title>Tower of Hanoi</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -62,54 +62,55 @@
                 
             <div id="text_container">
                 <br>
-                <h1>Searching Algorithms</h1>
+                <h1>Recursive Algorithms</h1>
                 <br>
-                <h2>Linear Search</h2>
-                <p style="text-indent: 2em;">Η γραμμική ή ακολουθιακή αναζήτηση είναι μία μέθοδος εύρεσης μιας συγκεκριμένης τιμής σε μία λίστα η οποία ελέγχει κάθε στοιχείο ακολουθιακά μέχρι να βρεθεί το επιθυμητό στοιχείο ή να εξαντληθεί η λίστα. Δεν είναι απαραίτητη η ταξινόμηση της λίστας.</p>
-                <p style="text-indent: 2em;">Η γραμμική αναζήτηση είναι ο απλούστερος αλγόριθμος αναζήτησης και ανήκει στην κατηγορία της τυφλής (brute-force) ή εξαντλητικής αναζήτησης. Η πολυπλοκότητα χειρότερης περίπτωσης είναι ανάλογη με τον αριθμό των στοιχείων της λίστας δηλαδή <img src="images/formulas/sorting-n.png" style="vertical-align: middle;">. Το μειονέκτημα σε σχέση με τη δυαδική αναζήτηση είναι ότι σε περίπτωση ταξινομημένης λίστας δεν το εκμεταλεύεται, όπου και είναι καταδικασμένη να εξετάσει ολόκληρη τη λίστα.
-                </p> 
+                <h2>Tower of Hanoi</h2>
+                <p>1.TowerOfHanoi(n)
+                <br>
+                2.To move n discs from peg A to peg C:
+                <br>
+                3.  a)move n−1 discs from A to B. This leaves disc n alone on peg A
+                <br>
+                4.  b)move disc n from A to C
+                <br>
+                5.  c)move n−1 discs from B to C so they sit on disc n
+                <br>
+                6.end
+                </p>
+
                 <h2>Pseudocode</h2>
                 <div id="pseudocode">
-                    1.LinearSearch(A[0..N-1], value)                
+                    1.TowerOfHanoi(n, ‘A’, ‘B’, ‘C’)
                     <br>
-                    2.<div id="level1">for i=0:N-1</div>
+                    2.<div id="level1">       if (topN = 1)</div>
                     <br>
-                    3.<div id="level2">if (A[i] = value)</div>
+                    3.<div id="level2">          move "Disk 1 from " from " to " to</div>
                     <br>
-                    4.<div id="level3">          return i</div>
+                    4.<div id="level1">       else</div>
                     <br>
-                    5.<div id="level2">      end if</div>
+                    5.<div id="level2">          TowerOfHanoi(topN - 1, from, to, inter);</div>
                     <br>
-                    6.<div id="level2">      i ← i + 1</div>
+                    6.<div id="level2">          move "Disk " topN " from " from " to " to</div>
                     <br>
-                    7.<div id="level1">  end for</div>
+                    7.<div id="level2">          TowerOfHanoi(topN - 1, inter, from, to);</div>
                     <br>
-                    8.<div id="level1">  return -1</div>
+                    8.<div id="level1">   end if</div>
                     <br>
-                    9.end
+                    9.end                  
                 </div>
-                    
                 
                 <h2>Applet</h2>
-                    
+                    <applet code="applets/tower-of-hanoi/TowerOfHanoi.class" width="800" height="600">
+                        Java applet that demonstrates binary search algorithm.
+                    </applet>
                 <br>
                 <h2>Example</h2>
-                <div id="example">
-                    <p>Έστω ο πίνακας A=[1 2 3 4 5 6 7 8 9 10] με μήκος Ν=10. Θέλουμε να αναζητήσουμε αν ο ακέραιος 9 αποτελεί στοιχείο του Α.</p>
-                    Επανάληψη 1<br>
-                    i=0, A[0]=1, 1≠9<br>
-                    <p>Το i παίρνει την τιμή 0 και το στοιχείο Α[0] ισούται με 1, το οποίο όμως διαφέρει από το ζητούμενο έτσι ο δείκτης i αυξάνεται κατά μία μονάδα.</p>
-                    Επανάληψη 2<br>
-                    i=1, A[1]=2, 2≠9<br>
-                    <p>Το επόμενο στοιχείο του πίνακα είναι το 2 και είναι διαφορετικό από το 9.</p>
-                    …<br>
-                    Επανάληψη 9<br>
-                    i=8, A[8]=9, 9=9<br>
-                    <p>Το επιθυμητό αποτέλεσμα έρχεται στην 9η επανάληψη όπου ο δείκτης i παίρνει την τιμή 8.</p>
+                <div id="example">                    
+                    <p>Έστω οι πύργοι του Hanoi με n=3 δίσκους. Για να μετακινηθούν 3 δίσκοι από τον στύλο A στον στύλο C πρέπει να μετακινηθούν 2 δίσκοι στον στύλο Β. Έτσι ο δίσκος με τη μεγαλύτερη διάμετρο μένει μόνος του στον στύλο Α και μπορεί να μεταφερθεί στον στύλο C. Το πρόβλημα που μένει να επιλυθεί είναι η μεταφορά 2 δίσκων από τον στύλο Β στον στύλο C. Αναδρομικά μεταφέρονται 2 δίσκοι από τον στύλο Β στον στύλο C. Μετακινείται ο μικρότερος δίσκος από τον στύλο Β στον στύλο Α και έτσι μένει ο μεσαίος δίσκος μόνος του στον στύλο Β και μπορεί να μετακινηθεί στον στύλο C πάνω στον μεγάλο δίσκο. Τέλος ο μικρός δίσκος μεταφέρεται από τον στύλο Α στον στύλο C.</p>
                 </div>
                 
-            </div>
-                        
+            </div>            
+            
         </div>
         
         <script src="../code.jquery.com/jquery-1.11.3.min.js"></script>

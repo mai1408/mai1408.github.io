@@ -3,7 +3,7 @@
    
 
 <head>
-        <title>Linear Search</title>
+        <title>Factorial</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -62,54 +62,46 @@
                 
             <div id="text_container">
                 <br>
-                <h1>Searching Algorithms</h1>
+                <h1>Recursive Algorithms</h1>
                 <br>
-                <h2>Linear Search</h2>
-                <p style="text-indent: 2em;">Η γραμμική ή ακολουθιακή αναζήτηση είναι μία μέθοδος εύρεσης μιας συγκεκριμένης τιμής σε μία λίστα η οποία ελέγχει κάθε στοιχείο ακολουθιακά μέχρι να βρεθεί το επιθυμητό στοιχείο ή να εξαντληθεί η λίστα. Δεν είναι απαραίτητη η ταξινόμηση της λίστας.</p>
-                <p style="text-indent: 2em;">Η γραμμική αναζήτηση είναι ο απλούστερος αλγόριθμος αναζήτησης και ανήκει στην κατηγορία της τυφλής (brute-force) ή εξαντλητικής αναζήτησης. Η πολυπλοκότητα χειρότερης περίπτωσης είναι ανάλογη με τον αριθμό των στοιχείων της λίστας δηλαδή <img src="images/formulas/sorting-n.png" style="vertical-align: middle;">. Το μειονέκτημα σε σχέση με τη δυαδική αναζήτηση είναι ότι σε περίπτωση ταξινομημένης λίστας δεν το εκμεταλεύεται, όπου και είναι καταδικασμένη να εξετάσει ολόκληρη τη λίστα.
-                </p> 
+                <h2>Factorial</h2>
+                <p style="text-indent: 2em;"></p>
+
                 <h2>Pseudocode</h2>
                 <div id="pseudocode">
-                    1.LinearSearch(A[0..N-1], value)                
+                    1.Factorial(n)
                     <br>
-                    2.<div id="level1">for i=0:N-1</div>
+                    2.<div id="level1">  if (n ≤ 1)</div>
                     <br>
-                    3.<div id="level2">if (A[i] = value)</div>
+                    3.<div id="level2">      return 1</div>
                     <br>
-                    4.<div id="level3">          return i</div>
+                    4.<div id="level1">      else</div>
                     <br>
-                    5.<div id="level2">      end if</div>
+                    5.<div id="level2">      return n * Factorial(n - 1)</div>
                     <br>
-                    6.<div id="level2">      i ← i + 1</div>
+                    6.<div id="level1">  end if</div>
                     <br>
-                    7.<div id="level1">  end for</div>
-                    <br>
-                    8.<div id="level1">  return -1</div>
-                    <br>
-                    9.end
+                    7.end                  
                 </div>
-                    
                 
                 <h2>Applet</h2>
-                    
                 <br>
                 <h2>Example</h2>
-                <div id="example">
-                    <p>Έστω ο πίνακας A=[1 2 3 4 5 6 7 8 9 10] με μήκος Ν=10. Θέλουμε να αναζητήσουμε αν ο ακέραιος 9 αποτελεί στοιχείο του Α.</p>
-                    Επανάληψη 1<br>
-                    i=0, A[0]=1, 1≠9<br>
-                    <p>Το i παίρνει την τιμή 0 και το στοιχείο Α[0] ισούται με 1, το οποίο όμως διαφέρει από το ζητούμενο έτσι ο δείκτης i αυξάνεται κατά μία μονάδα.</p>
-                    Επανάληψη 2<br>
-                    i=1, A[1]=2, 2≠9<br>
-                    <p>Το επόμενο στοιχείο του πίνακα είναι το 2 και είναι διαφορετικό από το 9.</p>
-                    …<br>
-                    Επανάληψη 9<br>
-                    i=8, A[8]=9, 9=9<br>
-                    <p>Το επιθυμητό αποτέλεσμα έρχεται στην 9η επανάληψη όπου ο δείκτης i παίρνει την τιμή 8.</p>
+                <div id="example">                    
+                    <p>Έστω ότι θέλουμε να υπολογίσουμε το 5! άρα n=5. Δεν ικανοποιείται η συνθήκη ελέγχου if οπότε θα εκτελεστεί η εντολή 5 * Factorial(4). Κατά την 2η κλήση του αλγορίθμου επίσης δεν ικανοποιείται η συνθήκη οπότε καλείται και πάλι ο αλγόριθμος. Αυτό συμβαίνει μέχρι το όρισμα της συνάρτησης Factorial να ισούται με 1, όπου και θα λάβει αποτέλεσμα 1. Τότε θα επιστρέψει στην προηγούμενη κλήση και θα πολλαπλασιαστεί με 2. Το ίδιο θα συνεχίσει να συμβαίνει μέχρι να επιστρέψει στην 1η κλήση του αλγορίθμου όπου το επιμέρους αποτέλεσμα θα πολλαπλασιαστεί με 5.</p>
+                    Factorial(5)=5*Factorial(4)=?<br>
+                    Factorial(4)=4*Factorial(3)=?<br>
+                    Factorial(3)=3*Factorial(2)=?<br>
+                    Factorial(2)=2*Factorial(1)=2*1=2<br>
+                    Factorial(3)=3*Factorial(2)=3*2=6<br>
+                    Factorial(4)=4*Factorial(3)=4*6=24<br>
+                    Factorial(5)=5*Factorial(4)=5*24=120<br>
+                    Το αποτέλεσμα είναι 120.
+                    <br>
                 </div>
                 
-            </div>
-                        
+            </div>            
+            
         </div>
         
         <script src="../code.jquery.com/jquery-1.11.3.min.js"></script>
