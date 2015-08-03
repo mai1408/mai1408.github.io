@@ -1,5 +1,5 @@
 /* 
- * Created by GRamers.
+ * Created by Antonios Dervisis.
  */
 
 $(document).ready(function(){
