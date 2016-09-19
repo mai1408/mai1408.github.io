@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 var global = {
     counter : 0,
-    speed : 10000,
+    speed : 0,
     onload : function(){        
         var time = 400;
         $('.menuitem').each(function(){
